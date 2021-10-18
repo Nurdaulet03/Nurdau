@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*========== Container ==========*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*========== Header ==========*/
+
+.header{
+    width: 100%;
+    height: 100px;
+    margin: 0 0 0 0;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(18, 21, 27, 0.7);
+    border-bottom: 1px solid white;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    align-items: center;
+}
+
+/*========== Intro ==========*/
+
+.intro {
+    width: 100%;
+    padding-top: 100px;
+    height: 100vh;
+    background: url("images/Chicago_GettyImages-1065188752.jpg") center no-repeat;
+    background-size: cover;
+}
+
+/*========== Navigations ==========*/
+
+.nav {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    margin-left: 55px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.1s linear;
+}
+
+.nav_link:hover {
+    opacity: 1;
+}
+
+/*========== Word ==========*/
+
+.word {
+    font-size: 26px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.5;
+}
+
+/*========== Icons ==========*/
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.icons_items {
+    width: 33.3%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icons_items:hover {
+    background-color: rgb(203, 209, 221);
+    transition: background-color 0.5s linear;
+}
+
+.icon_title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgb(27, 30, 36);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.icon_text {
+    color:rgb(27, 30, 36);
+    line-height: 1.5;
+}
+
+/*========== Images ==========*/
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.images_items {
+    width: 25%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.images_items:hover .images_content{
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.images_photo {
+    height: 400px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.images_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 74, 52, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.images_content_title {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.images_content_text {
+    font-size: 14px;
+    color: white;
+}
+
+/*========== Monuments ==========*/
+
+.monuments {
+    margin: 100px 0;
+}
+
+.monuments_inner {
+    align-items: center;
+    padding-left: 400px;
+}
+
+.monuments_item {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.monuments_image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}    
+
+.monuments_name {
+    font-size: 22px;
+    color: rgb(184, 14, 14);
+    margin-bottom: 10px;
+}
+
+.monuments_info {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(27, 30, 36);
+}
+
+/*========== Footer ==========*/
+
+.footer {
+    padding: 30px 0;
+    background-color: rgba(18, 21, 27, 0.9);
+    text-align: center;
+}
+
+.footer_text {
+    color: white;
+}
+
